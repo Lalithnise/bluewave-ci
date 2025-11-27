@@ -9,6 +9,13 @@ pipeline {
             }
         }
 
+        stage('Run Script') {
+            steps {
+                sh 'chmod +x bluewave.sh'
+                sh './bluewave.sh'
+            }
+        }
+
         stage('Build') {
             steps {
                 echo "Building the project..."
