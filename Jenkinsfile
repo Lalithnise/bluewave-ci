@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/Lalithnise/bluewave-cii'
+                    url: 'https://github.com/Lalithnise/bluewave-ci'
             }
         }
 
